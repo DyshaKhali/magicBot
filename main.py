@@ -12,6 +12,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
+# Добавятся позже
 # Список упражнений
 exercises = [
     "Метод фокальных объектов:\n"
