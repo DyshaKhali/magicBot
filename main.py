@@ -49,7 +49,7 @@ user_exercise_index = {}
 @dp.message(Command("start"))
 async def send_welcome(message: Message):
     user_exercise_index[message.from_user.id] = 0
-    await message.answer("Привет! Давай начнем наши упражнения.\n" + exercises[0], reply_markup=get_keyboard())
+    await message.answer("Привет! Давай начнем выполнять наши упражнения.\n" + exercises[0], reply_markup=get_keyboard())
 
 # Обработка кнопки "Следующее упражнение" или "Начать упражнения сначала"
 @dp.message(F.text.in_({"Следующее упражнение", "Начать упражнения сначала"}))
